@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ExampleTodoList renders correctly 1`] = `
+<div>
+  <h1
+    className="sc-bdVaJa cRABer"
+  >
+    TODOS
+  </h1>
+  <form
+    onSubmit={[Function]}
+  >
+    <div>
+      <span>
+        New todo:
+      </span>
+      <input
+        onChange={[Function]}
+        value=""
+      />
+    </div>
+  </form>
+</div>
+`;

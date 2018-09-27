@@ -1,4 +1,8 @@
+.env
 .mypy_cache
 .pytest_cache
 .vscode
 __pycache__
+build
+node_modules
+yarn-error.log

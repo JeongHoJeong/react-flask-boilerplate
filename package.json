@@ -1,0 +1,53 @@
+{
+  "name": "react-flask-boilerplate",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:JeongHoJeong/react-flask-boilerplate.git",
+  "author": "Jeongho Jeong <fiil12@hotmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "react": "^16.5.2",
+    "react-dom": "^16.5.2",
+    "react-router": "^4.3.1",
+    "react-router-dom": "^4.3.1",
+    "react-test-renderer": "^16.5.2",
+    "styled-components": "^3.4.9",
+    "typescript": "^3.1.1",
+    "webpack": "^4.20.2"
+  },
+  "devDependencies": {
+    "@types/jest": "^23.3.2",
+    "@types/react": "^16.4.14",
+    "@types/react-dom": "^16.0.8",
+    "@types/react-router": "^4.0.31",
+    "@types/react-router-dom": "^4.3.1",
+    "@types/react-test-renderer": "^16.0.2",
+    "html-webpack-plugin": "^3.2.0",
+    "jest": "^23.6.0",
+    "ts-jest": "^23.10.3",
+    "ts-loader": "^5.2.1",
+    "tslint": "^5.11.0",
+    "tslint-react": "^3.6.0",
+    "webpack-cli": "^3.1.2"
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "jest": {
+    "moduleFileExtensions": [
+      "tsx",
+      "ts",
+      "js"
+    ],
+    "transform": {
+      "^.+\\.tsx?$": "ts-jest"
+    },
+    "setupFiles": [
+      "<rootDir>/setupJest.ts"
+    ],
+    "moduleNameMapper": {
+      "^@/(.*)$": "<rootDir>/webapp/$1"
+    },
+    "testRegex": "(/__tests__/.*|(\\.|/)(test|spec))\\.(jsx?|tsx?)$"
+  }
+}

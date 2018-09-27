@@ -4,13 +4,19 @@ verify_ssl = true
 name = "pypi"
 
 [packages]
-flask = "*"
+Flask = "*"
+click = "*"
+gunicorn = "*"
+SQLAlchemy = "*"
+"psycopg2-binary" = "*"
 
 [dev-packages]
 "flake8" = "*"
 mypy = "*"
 pytest = "*"
 rope = "*"
+typeshed = "*"
+python-dotenv = "*"
 
 [requires]
 python_version = "3.6"
