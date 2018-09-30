@@ -7,13 +7,6 @@ from app.models.example_todo import ExampleTodo
 bp = Blueprint('example', __name__, url_prefix='/example')
 
 
-@bp.route('/', methods=['GET'])
-def main():
-    return jsonify({
-        'data': 'example',
-    })
-
-
 @bp.route('/todos/', methods=['GET'])
 def todos():
     with DBSession() as session:
