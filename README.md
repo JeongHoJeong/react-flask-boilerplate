@@ -6,6 +6,7 @@
 pipenv --python 3.6.1
 pipenv install --dev
 pipenv shell
+yarn install
 ```
 
 Create `.env` file to provide environment variables.
@@ -18,6 +19,7 @@ FLASK_ENV=development
 ### run
 ```bash
 # development
+yarn webpack
 flask run
 
 # production
