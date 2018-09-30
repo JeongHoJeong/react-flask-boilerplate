@@ -39,7 +39,7 @@ def create_app(config_object=None):
     def make_shell_context():
         return dict(app=app)
 
-    @app.cli.command('test', short_help='Run pytest.')
+    @app.cli.command('test', short_help='Runs pytest.')
     def test_command():
         subprocess.run(['pytest'])
 
