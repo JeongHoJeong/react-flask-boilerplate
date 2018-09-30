@@ -39,11 +39,11 @@ def create_app(config_object=None):
     def make_shell_context():
         return dict(app=app)
 
-    @app.cli.command()
+    @app.cli.command('test', short_help='Run pytest.')
     def test_command():
         subprocess.run(['pytest'])
 
-    @app.cli.command('reset-db')
+    @app.cli.command('reset-db', short_help='Resets development database.')
     def reset_db_command():
         from app.db import reset_db
         reset_db()
