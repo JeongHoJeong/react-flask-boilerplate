@@ -39,6 +39,7 @@ class DBSession:
             self.session.commit()
         else:
             self.session.rollback()
+        self.session.close()
 
 
 def reset_db():
