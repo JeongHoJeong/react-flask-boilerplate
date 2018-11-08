@@ -16,6 +16,14 @@ APP_CONFIG_OBJECT=config.dev.DevelopmentConfig
 FLASK_ENV=development
 ```
 
+Reset database.
+
+```python
+# After entering `flask shell`...
+from app.db import reset_db
+reset_db()
+```
+
 ### run
 ```bash
 # development
