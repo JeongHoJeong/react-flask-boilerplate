@@ -12,6 +12,10 @@ class DB:
     @property
     def engine(self):
         if self._engine is None:
+            print(
+                'Creating engine with DB URI: '
+                f'{current_app.config["DATABASE_URI"]}'
+            )
             self._engine = create_engine(current_app.config['DATABASE_URI'])
         return self._engine
 
@@ -43,6 +47,8 @@ class DBSession:
 
 
 def reset_db():
+    print('`reset_db` started.')
+
     from app.models import metadata
     from app.models.example_todo import ExampleTodo
 
@@ -59,3 +65,5 @@ def reset_db():
         for todo_desc in todos:
             todo = ExampleTodo(description=todo_desc)
             session.add(todo)
+
+    print('`reset_db` completed.')

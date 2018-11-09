@@ -4,6 +4,11 @@ services:
     build: .
     ports:
       - "${PORT}:5000"
+    environment:
+      DB_USER: example
+      DB_PASSWORD: example
+      DB_HOST: db
+      DB_PORT: 5432
   db:
     image: postgres
     ports:
@@ -12,4 +17,4 @@ services:
     environment:
       POSTGRES_USER: example
       POSTGRES_PASSWORD: example
-      POSTGRES_DB: example
+      POSTGRES_DB: postgres
