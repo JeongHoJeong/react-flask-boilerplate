@@ -3,7 +3,7 @@
 ## how to run
 ### setup
 ```bash
-pipenv --python 3.6.1
+pipenv --python 3.7.1
 pipenv install --dev
 pipenv shell
 yarn install
